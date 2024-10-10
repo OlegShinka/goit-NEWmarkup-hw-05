@@ -382,19 +382,75 @@
                     </li>
                 </ul>
             </div>
+            <form class="form-footer">
+                <div class="subscribe">
+                    <p class="inp-title">Subscribe</p>
+                    <input type="email" name="subscribe" class="inp-subscribe" placeholder="E-mail">
+                </div>
+                <button class="btn-subscribe" type="submit">Subscribe
+                    <svg class="icon-subscribe" width="24" height="24">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
 
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-
-
-            <button type="button" class="btn-modal" data-modal-close>
+            <button type="button" class="btn-modal-close" data-modal-close>
                 <svg class="icon-modal-close" width="8" height="8">
-                    <use href="./images/close-modal.svg#icon-close-modal"></use>
+                    <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
+            <form class="form-modal">
+                <p class="modal-desc">Leave your contacts and we will call you back</p>
+                <div class="form-field">
+                    <label for="name" class="label-inp">Name</label>
+                    <div class="wrapper-input">
+                        <input type="text" class="inp-modal" name="name" id="name">
+                        <svg class="icon-modal" width="24" height="18">
+                            <use href="./images/inp-modal-icons.svg#icon-person-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="tel" class="label-inp">Phone</label>
+                    <div class="wrapper-input">
+                        <input type="tel" class="inp-modal" name="tel" id="tel">
+                        <svg class="icon-modal" width="24" height="18">
+                            <use href="./images/inp-modal-icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="email" class="label-inp">E-mail</label>
+                    <div class="wrapper-input">
+                        <input type="email" class="inp-modal" name="email" id="email">
+                        <svg class="icon-modal" width="24" height="18">
+                            <use href="./images/inp-modal-icons.svg#icon-email-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <label for="comment" class="label-inp">Comment</label>
+                <textarea class="textarea" name="comment" id="comment" placeholder="Text input"></textarea>
+
+                <label class="form-field-checkbox">
+
+                    <input type="checkbox" class="modal-input-checkbox" name="accept">
+                    <svg class="icon-checkbox" width="16" height="16">
+                        <use class="checked" href="./images/icons.svg#icon-click"></use>
+                        <use class="unchecked" href="./images/icons.svg#icon-Default-02"></use>
+                    </svg>
+                    <span class="span-checkbox">I accept the terms and conditions of the
+                        <a href="" class="checkbox-link" target="_blank" no-refer no-opener>Privacy Policy</a>
+                    </span>
+
+                </label>
+                <button type="submit" class="btn-modal">Send</button>
+            </form>
+
         </div>
 
     </div>
