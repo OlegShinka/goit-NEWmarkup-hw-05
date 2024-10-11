@@ -606,9 +606,12 @@ textarea {
 
 .inp-subscribe {
     color: var(--WHITE-color);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     width: 264px;
     height: 40px;
-    background-color: var(--NAVY-BLUE-color);
+    background-color: transparent;
     border: 1px solid var(--WHITE-color);
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -659,6 +662,7 @@ textarea {
 
 .icon-subscribe {
     fill: currentColor;
+    margin-left: 16px;
 }
 
 /* Portfolio */
