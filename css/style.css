@@ -594,6 +594,16 @@ textarea {
     align-items: flex-end;
 }
 
+.inp-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--WHITE-color);
+    margin-bottom: 16px;
+
+}
+
 .inp-subscribe {
     color: var(--WHITE-color);
     width: 264px;
@@ -601,6 +611,7 @@ textarea {
     background-color: var(--NAVY-BLUE-color);
     border: 1px solid var(--WHITE-color);
     border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     outline: none;
     /* margin-right: 24px; */
     padding-left: 16px;
@@ -619,9 +630,13 @@ textarea {
 .btn-subscribe {
     display: flex;
     gap: 16px;
+    justify-content: center;
     align-items: center;
+    height: 40px;
+    min-width: 165px;
     background-color: var(--IRIS-color);
     color: var(--WHITE-color);
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
