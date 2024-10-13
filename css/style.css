@@ -967,11 +967,11 @@ textarea {
     outline: transparent;
     resize: none;
     padding: 8px 16px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 
 }
 
-.textarea::placeholder {
+.textarea-modal::placeholder {
     color: var(--LIGHT-SLATE-color);
     font-size: 12px;
     font-weight: 400;
@@ -980,9 +980,9 @@ textarea {
 
 }
 
-.textarea:focus {
-    /* border-color: var(--IRIS-color); */
-    border-color: #4D5AE5;
+.textarea-modal:focus {
+    border-color: var(--IRIS-color);
+    /* border-color: #4D5AE5; */
 }
 
 
