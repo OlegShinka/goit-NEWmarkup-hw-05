@@ -919,11 +919,13 @@ textarea {
 }
 
 .label-inp {
+    display: block;
     color: var(--LIGHT-SLATE-color);
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    margin-bottom: 4px;
 }
 
 .icon-modal {
@@ -950,6 +952,7 @@ textarea {
     border: 1px solid var(--LIGHT-SLATE-color);
     border-radius: 4px;
     background-color: var(--DAIRY-color);
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: transparent;
     margin-bottom: 16px;
@@ -980,44 +983,68 @@ textarea {
 .modal-input-checkbox {
     display: inline-block;
     position: absolute;
+    visibility: hidden;
     border: 0;
     padding: 0;
     overflow: hidden;
-    opacity: 0;
+}
+
+.modal-label-checkbox {
+    display: block;
+    color: var(--LIGHT-SLATE-color);
+    font-size: 12px;
+    /* font-weight: 400; */
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .checked {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.unchecked {
+/* .unchecked {
     opacity: 1;
     stroke: var(--LIGHT-SLATE-color);
     fill: var(--DAIRY-color);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+/* .modal-input-checkbox:checked+.modal-label-checkbox+.icon-checkbox {
+    background-color: var(--OCEAN-color);
+    border: none;
+    fill: var(--CLOUD-color);
+} */
+
+input[type="checkbox"]:checked+.modal-label-checkbox .icon-checkbox {
+    fill: var(--GREEN-color);
+
 }
 
-.modal-input-checkbox:checked+.icon-checkbox>.checked {
-    opacity: 1;
+input[type="checkbox"]:checked+.modal-label-checkbox>.span-checkbox {
+    background-color: #404BBF;
+
 }
 
-.modal-input-checkbox:checked+.icon-checkbox>.unchecked {
+/* .modal-input-checkbox:checked+.icon-checkbox>.unchecked {
     opacity: 0;
-}
+} */
 
 .icon-checkbox {
     position: absolute;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .span-checkbox {
-    color: var(--LIGHT-SLATE-color);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    margin-left: 24px;
-    margin-right: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-link {
