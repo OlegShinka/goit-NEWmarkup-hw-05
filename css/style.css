@@ -948,7 +948,7 @@ textarea {
     display: flex;
     flex-direction: column;
     /* padding-right: 16px; */
-    /* margin-bottom: 16px; */
+    margin-bottom: 16px;
 }
 
 .textarea-modal {
@@ -981,7 +981,8 @@ textarea {
 }
 
 .textarea:focus {
-    border-color: var(--IRIS-color);
+    /* border-color: var(--IRIS-color); */
+    border-color: #4D5AE5;
 }
 
 
